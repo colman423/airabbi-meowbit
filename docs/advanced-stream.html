@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="docs/static/logo.svg" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="docs/static/logo.svg" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="">
+<link rel="icon" type="image/png" href="">
+<link rel="shortcut icon" href="">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/blockly.css" />
+<link rel="stylesheet" href="/docfiles/style.css" />
+<link rel="stylesheet" href="/docfiles/vs.css" />
+<link rel="stylesheet" href="/docfiles/target.css" />
+
+<script src="/jquery.js" type="text/javascript"></script>
+<script src="/semantic.js" type="text/javascript"></script>
+<script src="/docfiles/target.js" type="text/javascript"></script>
+<script src="/embed.js" type="text/javascript"></script>
+<script src="/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div>
+                <a href="/docs/.html" class="header" tabindex="0" title="Go to editor">
+                    <img aria-hidden="true" role="presentation" class="ui mini image" src="docs/static/logo.svg" />
+                </a>
+            </div>
+            <div>
+                Documentation
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/docs/save.html" role="menuitem">Save</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="arcade-advanced-live">Arcade Advanced Live</h1><p>Join the MakeCode developers as we stream MakeCode Arcade live on mixer.com/makecode. Weekdays at 1:00pm PST</p>
+<h2 id="videos">Videos</h2>
+    <pre><code class="lang-codecard"><ul>
+<li>name: Making a survival game</li>
+<li>description: Join Richard, Shannon, Daryl, and Joey as they create another randomly generated game idea! Today we started making a survival game and show how to make a game HUD.</li>
+<li>youTubeId: SvXeJevUkb4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/SvXeJevUkb4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Character Animations</li>
+<li>description: Join Richard, Shannon, Joey, and Daryl as they add walking and sword swinging animations to an adventure game hero.</li>
+<li>youTubeId: zRewjteisLw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/zRewjteisLw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Character Animations</li>
+<li>description: Join Richard, Shannon, Joey, and Daryl as they add walking and sword swinging animations to an adventure game hero.</li>
+<li>youTubeId: zRewjteisLw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/zRewjteisLw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Battle</li>
+<li>description: Join Richard, Shannon, and Daryl as they make a game with an intense boss battle!</li>
+<li>youTubeId: 19AO3H_lpuE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/19AO3H_lpuE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Adding Enemy Lives</li>
+<li>description: Today Daryl, Richard, and Shannon demonstrated how to add lives to enemy sprites using the arcade-sprite-data extension!</li>
+<li>youTubeId: 424nl7NPyck</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/424nl7NPyck.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Tower Defense</li>
+<li>description: Join Daryl, Joey, Shannon, and Richard as they make a tower defense game! This one features wasps and frogs, as well as path finding and tower placement mechanics.</li>
+<li>youTubeId: eWtftlH5J6Q</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/eWtftlH5J6Q.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Survival Body Building</li>
+<li>description: Join Richard, Shannon, Daryl, and Joey as they continue working on their survival game. Today we added proper multi-fire effects, a way to pick up all crystals, and a way to build a new body for Skelly using those crystals! Check out the code here: <a target="_blank" rel="nofollow noopener" href="https://makecode.com/_H4CeqPbagVhx">https://makecode.com/_H4CeqPbagVhx</a></li>
+<li>youTubeId: glQRlOyNgtQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/glQRlOyNgtQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Falling Duck Remix, Power Ups!</li>
+<li>description: Join Daryl, Joey, Richard, and Shannon as they add new game mechanics to falling duck. This time we add a new type of player character, with new abilities!</li>
+<li>youTubeId: dRd9QRkZ0W8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/dRd9QRkZ0W8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: How to create a road crossing game (with alligators!)</li>
+<li>description: Live stream of learning to code fun games on MakeCode Arcade.</li>
+<li>youTubeId: ykXhScb3LGQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ykXhScb3LGQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Platformer Boss</li>
+<li>description: Join Joey, Shannon, and Richard as they make yet another boss battle game! This time, we made a platformer with a jumping hermit crab and an angry pufferfish.</li>
+<li>youTubeId: 5xfi7YKKmt0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/5xfi7YKKmt0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: How to Make an Intro Scene</li>
+<li>description: Join Hassan, Shannon, and Vivian as we add some intro animations to explain the story behind our pyramid game, Temple of Zoom! We use the storytelling extension to give our sprites movements and add text, the melody blocks to give it some spooky, and some camera effects!</li>
+<li>youTubeId: VLDhWG4kR30</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/VLDhWG4kR30.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Rush 2</li>
+<li>description: It’s boss rush week for the MakeCode Arcade Advanced stream! Today we made our second boss character: a fire throwing bouncing boss with screen scrolling mechanics.</li>
+<li>youTubeId: nk1Out8FaJg</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/nk1Out8FaJg.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Rush 1</li>
+<li>description: It’s boss rush week for the MakeCode Arcade Advanced stream! Today we recorded part one where we made a simple boss battle against a purple rectangle named Albert.</li>
+<li>youTubeId: ucUmD0Ux7kk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ucUmD0Ux7kk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Using settings</li>
+<li>description: Join Richard, Daryl, Shannon, and Joey as they make a pirate game! This stream is a great one to watch if you want to learn how to use settings to save a player’s progress.</li>
+<li>youTubeId: qafMt6bPY58</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/qafMt6bPY58.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Customizable Racing Game (Part 1)</li>
+<li>description: Join Richard, Daryl, Joey, Vivian, and Shannon as they start coding a racing game with customizable vehicle options!</li>
+<li>youTubeId: dvrUWT0Edjo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/dvrUWT0Edjo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Rush 3</li>
+<li>description: Boss rush week continues! Join the MakeCode Arcade Advanced team as we program a boss battle with a teleporting orange square named Chase.</li>
+<li>youTubeId: hi1XpcNmAao</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/hi1XpcNmAao.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: First livestream!</li>
+<li>description: Learn to code fun games on MakeCode Arcade.</li>
+<li>youTubeId: YoiLQdczTsI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/YoiLQdczTsI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Collecting things on Mars</li>
+<li>description: Join Daryl, Richard, and Shannon as they make a game about a rover picking up things on mars. In this video, we show how to create a player inventory in a game about collecting resources.</li>
+<li>youTubeId: BoqKYryOm8w</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/BoqKYryOm8w.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Adding Enemies to our Pyramid Traffic Game</li>
+<li>description: Join Richard, Shannon, and Vivian as we add more levels and enemies to our Temple of Zoom game! We have classic enemies of Mo the Cat: mummy cats (who follow you around), QUEEN mummy cats, (who follow you around smartly), and euphoribas (who are just doing their thing, but don’t step on their spikes)!</li>
+<li>youTubeId: 1qHvGCks4vo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/1qHvGCks4vo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boots in Space</li>
+<li>description: Join Joey, Richard, Daryl, and Shannon as we make a game about cleaning up boots. Why are there boots in space? Well technically everything is in space so don’t worry about it.</li>
+<li>youTubeId: 8cjyVY6yfGM</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/8cjyVY6yfGM.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Road crossing game part two!</li>
+<li>description: Learn to code fun games on MakeCode Arcade for Advanced users.</li>
+<li>youTubeId: 2da3raAeYyU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/2da3raAeYyU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Projectile Explosions</li>
+<li>description: Join Richard, Daryl, Joey, Vivian, and Shannon as they make a platformer game where you launch exploding projectiles!</li>
+<li>youTubeId: ZYKZ1AfgqbU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ZYKZ1AfgqbU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Character dialog</li>
+<li>description: Join Richard, Vivian, and Joey as they make a game that shows off how to do character dialog, rpg style! The sound is messed up for the first minute or two, but it gets fixed so keep watching.</li>
+<li>youTubeId: yTqoq0ewOyQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/yTqoq0ewOyQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Mood lighting</li>
+<li>description: Join Richard, Shannon, Daryl, and Joey as they continue working on their survival game. Today we added a lose-condition, a win-condition, and some lighting effects! Check out the code here: <a target="_blank" rel="nofollow noopener" href="https://makecode.com/_MEpWVyTgwDjz">https://makecode.com/_MEpWVyTgwDjz</a></li>
+<li>youTubeId: w7Y6Do9HPU4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/w7Y6Do9HPU4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Game idea generator</li>
+<li>description: Join Daryl, Joey, Shannon, and Richard as they create a game idea generator in MakeCode Arcade! We also create a custom extension on the fly and forget to name the game because we ran out of time.</li>
+<li>youTubeId: 48uOkTLnpDk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/48uOkTLnpDk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon Part 1</li>
+<li>description: Join Richard, Joey, and Vivian as they start creating a monster collecting game! We’ll be finishing this game over the course of this week so make sure you stay tuned!</li>
+<li>youTubeId: _LM_PFMpBBI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/_LM_PFMpBBI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Text messages</li>
+<li>description: Join Richard, Daryl, Joey, Shannon, Vivian, and Abhijith as they make a delivery game with text messages!</li>
+<li>youTubeId: TInyY24uRBU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/TInyY24uRBU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sneaking through the school</li>
+<li>description: Join Shannon, Daryl, Richard, and Joey as they continue working on their stealthy school game from last stream. This time we added enemies, drew some art, and answered a few teacher questions towards the end of the stream.</li>
+<li>youTubeId: j5t4RcTcMg0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/j5t4RcTcMg0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sprite Data</li>
+<li>description: Join Richard, Daryl, Shannon, and Joey as they make some friends! In this stream we talk about how to add custom properties (like “name”, or “lives”) to a sprite using the arcade-sprite-data extension.</li>
+<li>youTubeId: oIdu_k8d-94</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/oIdu_k8d-94.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Make a Map!</li>
+<li>description: Join Richard, Joey, and Vivian as we learn to make a map to switch between levels! This particular map is island themed, but you can use it for anything.</li>
+<li>youTubeId: CrYo1vOsgK0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/CrYo1vOsgK0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Remixing Falling Duck</li>
+<li>description: Daryl, Joey, Richard, and Shannon remix Falling Duck in MakeCode Arcade! In this stream, we add multiple lives for our duck and invincibility frames when the duck takes damage.</li>
+<li>youTubeId: PxJZXTpvBVQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/PxJZXTpvBVQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Incremental game</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as they make the start of an incremental game!</li>
+<li>youTubeId: 1hf-H1iV0dM</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/1hf-H1iV0dM.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Mars inventory, part two!</li>
+<li>description: Join Richard, Shannon, Joey, and Daryl as they finish up their inventory game! If you haven’t watched part one, check it out here: <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/watch?v=BoqKYryOm8w&amp;feature=youtu.be">https://www.youtube.com/watch?v=BoqKYryOm8w&amp;feature=youtu.be</a></li>
+<li>youTubeId: slY3eITNFoo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/slY3eITNFoo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Using settings Pt. 2</li>
+<li>description: Join Richard, Daryl, Shannon, and Joey as they continue to make a pirate game! In this stream we talk about more settings like strings and arrays and also how to reset your settings when you win or lose the game.</li>
+<li>youTubeId: ogpAcdx2pZY</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ogpAcdx2pZY.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Drawing a dungeon</li>
+<li>description: Join Richard, Vivian, Daryl, and Shannon as they build a game that lets us draw out a dungeon and turn it into a series of tilemaps!</li>
+<li>youTubeId: aiw1X870CwQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/aiw1X870CwQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Turn off the Dark</li>
+<li>description: Join Richard, Daryl, Shannon, not Joey, and Vivian as we make a game about walking across your room at night! When it’s dark, you see monsters coming for you, but if you use your flashlight (press A!) you’ll see that it was just your imagination running wild, and all the monsters were actually just regular things. Try to get to the other side of the room to turn on the light switch, and make sure you don’t touch any of the monsters!</li>
+<li>youTubeId: tKgAVGWZTNQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/tKgAVGWZTNQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Attaching Sprites</li>
+<li>description: Join Richard, Joey, Shannon, Vivian, and Daryl as they make a game where you can destroy enemy ships and add them to your ship. We also establish a gold star system that will almost certainly be forgotten about next week.</li>
+<li>youTubeId: uoj8ejNZ3Zs</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/uoj8ejNZ3Zs.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Customizable Racing Game (Part 2)</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian as they finish coding their racing game with customizable vehicle options. Sorry for the long trigonometry digression in the middle!</li>
+<li>youTubeId: el5_R1TkT9A</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/el5_R1TkT9A.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Elevator Game</li>
+<li>description: Join Richard, Joey, and Shannon as we making a quiz game! Check back next week for the “quiz” component! In this stream, we code an elevator-like mechanism for switching between floors of an office building, and we populate those floors with random items.</li>
+<li>youTubeId: 0677RVhuvxU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/0677RVhuvxU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Fighting the ARMadillo</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make a game about fighting a big boss! This boss has two kinds of attacks, and two phases. We also discuss simple machines and upper body strength</li>
+<li>youTubeId: ef_hnXMWBDE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ef_hnXMWBDE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Pet ALL the Dogs!</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, Hassan, and Vivian as we make a game about being a tumbleweed and petting dogs.</li>
+<li>youTubeId: 71zHQ0wapBU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/71zHQ0wapBU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: One Room game jam stream!</li>
+<li>description: Join Richard, Shannon, and Daryl as they make a “one room” themed game jam game! Find out more details about our ongoing game on the makecode forum.</li>
+<li>youTubeId: JU-xXJ6G1Uc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/JU-xXJ6G1Uc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Climbing a Tree</li>
+<li>description: Join Richard, Shannon, Daryl, and Joey as they create a game loosely based on doodle jump! There’s an adorable squirrel in this one too.</li>
+<li>youTubeId: M4n2j27jAZI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/M4n2j27jAZI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Rush final</li>
+<li>description: Join Richard, Shannon, Joey, and Daryl as they make the last boss in our boss rush game!</li>
+<li>youTubeId: VUal-w5Z3hw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/VUal-w5Z3hw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Fishing Game</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make “Catch some fish”, a game about a cat who is fishing! Use the arrow keys to move your lure around, and press A to reel them in! But be selective with your timing - you only get one chance 😁</li>
+<li>youTubeId: TjpuN35u4-U</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/TjpuN35u4-U.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Skateboarding Stunts</li>
+<li>description: Join Richard, Joey, and Vivian as we make a game about skateboarding! Press A to flip</li>
+<li>youTubeId: BDng6c-Jkmc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/BDng6c-Jkmc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Coding Challenge #2</li>
+<li>description: This is a very special MakeCode Arcade Advanced stream in which we try something a little different. In this stream, both Shannon and Daryl are making games while Joey and Richard talk about stuff. This stream is light on coding, and more game design focused but we had a lot of fun doing it.</li>
+<li>youTubeId: lS7AE0PJENo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/lS7AE0PJENo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Color Changing World</li>
+<li>description: Join Richard, Joey, and Vivian as we explore color! We’re starting the basis of a game where the colors change when you walk through a door.</li>
+<li>youTubeId: 0sDq7w1rGLc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/0sDq7w1rGLc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: haunted kitchen</li>
+<li>description: Join Richard and Vivian as we don’t make a game, but make a cool idea, where you have a bunch of kitchen items who want to get together and hang out but when you look at them they stop moving!</li>
+<li>youTubeId: PwUKEns6ZMs</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/PwUKEns6ZMs.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Custom Sprite Effects</li>
+<li>description: Join Shannon, Joey, and Vivian as we make a bunch of custom sprite effects! We make a teleportation animation, a leaf kicking fall vibe, a freeze/iced tile, and angry/surprised emotes!</li>
+<li>youTubeId: mP4H3F128iw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/mP4H3F128iw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Highway of Stars</li>
+<li>description: Join Vivian, Richard, Daryl, Joey, and Shannon as we clear ground for an interstellar highway! Use the ‘A’ button to set off explosions, and try to clear the map with as few explosions as possible.</li>
+<li>youTubeId: PRfzCoz3a2s</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/PRfzCoz3a2s.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Charge Shot</li>
+<li>description: Join Richard, Shannon, and Vivian as they make a platformer game with a charge-up weapon!</li>
+<li>youTubeId: FO3wHs4f2r8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/FO3wHs4f2r8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: ROB G’s Traffic School</li>
+<li>description: Join Richard, Shannon, and Vivian as they make a game where you control traffic lights! Press buttons to turn lights on and off and guide cars to their destinations (without crashing).</li>
+<li>youTubeId: RpDXjl9AsDs</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/RpDXjl9AsDs.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: History, but with more animals!</li>
+<li>description: Join Richard, Vivian, Shannon, Daryl, and Joey as we make a game based on our game idea generator! The prompt this time was a “historical and monochrome game set in a library where things get broken”. We ended up making a reinterpretation of the destruction of the library of Alexandria with an adorable mouse librarian.</li>
+<li>youTubeId: usXXV1B0FCc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/usXXV1B0FCc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: One-button sneaking around!</li>
+<li>description: Join Shannon, Daryl, Joey, and Richard as they use the “game idea generator” from the previous video to build an entirely new game. This one will use the elements of “colorful racing game in a school featuring one-button”.</li>
+<li>youTubeId: w3qZJADON-4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/w3qZJADON-4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Radical Level Design</li>
+<li>description: Join Richard, Shannon, and Vivian as they revisit a game they made last week! This is a mostly level-design focused stream, but the game ended up being pretty fun!</li>
+<li>youTubeId: dPpraBYthqI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/dPpraBYthqI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Slip ‘N Skate</li>
+<li>description: Join Sonia, Shannon, and Vivian as we make a platformer with a twist - you have to land on a different tile before time runs out! But lots of things are going to try to get in your way</li>
+<li>youTubeId: VQHgPg2T6yQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/VQHgPg2T6yQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Spaceship Bugs</li>
+<li>description: Today Daryl, Richard, and Shannon demonstrated the “tilemaps” extension (<a target="_blank" rel="nofollow noopener" href="https://github.com/microsoft/pxt-tilemaps">https://github.com/microsoft/pxt-tilemaps</a>) which is in beta. They explored some of the basics of working with multiple tilemaps, however there were also a number of technical issues with the extension.</li>
+<li>youTubeId: UBzgFLRHAS8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/UBzgFLRHAS8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Ramping up the difficulty in Falling Bird</li>
+<li>description: Join Daryl, Joey, Richard, and Shannon as they continue remixing Falling Duck in MakeCode Arcade . This stream, we made the game start out easier and get more difficult the longer you play.</li>
+<li>youTubeId: d1yP5oa8zTU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/d1yP5oa8zTU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Food or Not Food?</li>
+<li>description: Join Richard, Hassan, Shannon, Joey, and Vivian as we make a game about a corgipillar. Press ‘A’ to scooch the corgi across the ground and catch as many yummy things as you can! Try to maximize your corgi’s happiness :D We used the animation extension and status bar extension</li>
+<li>youTubeId: kYdS9Ogb5Aw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/kYdS9Ogb5Aw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Goat Mountain!</li>
+<li>description: Join Kim, Shannon, Joey, and Vivian as we try to stack goats! Goat like to go high, right?</li>
+<li>youTubeId: A9wx9QwlPXk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/A9wx9QwlPXk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: How to Make Minesweeper</li>
+<li>description: Join Richard, Shannon, and Vivian as we remake and remix the classic game: Minesweeper! but gopher themed. In this stream, we use the small tilemaps extension to make the board, and a bunch of sprites to cover it up. We also power through some recursion to make a flood fill! And it works!</li>
+<li>youTubeId: jn3Y90l2bLE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/jn3Y90l2bLE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: It takes a bunny to raise a village</li>
+<li>description: Join Richard, Daryl, Shannon, Joey as we build a crafting game where Thumper the bunny builds log cabins by collecting stones and wood.</li>
+<li>youTubeId: ePuzNxjySpQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ePuzNxjySpQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boss Rush 4</li>
+<li>description: It’s boss rush week on the MakeCode Arcade Advanced stream! This time we made a jumping boss with several different attack patterns.</li>
+<li>youTubeId: JMc61ROb5xM</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/JMc61ROb5xM.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Untitled Bunny Game Pt 3</li>
+<li>description: Join Daryl, Vivian, and Joey as we finish (for now) our snow bunny stealth game! You are a rabbit and need to steal carrots while avoiding farmers. This game features a side-scrolling window, procedural generation, sneak mechanics, and basic state machine AI.</li>
+<li>youTubeId: StZOoOP_Rss</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/StZOoOP_Rss.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: A Colorful Tundra Monkey</li>
+<li>description: Join Joey, Daryl, Richard, and Shannon as we make game about throwing fruit at animals in the tundra!</li>
+<li>youTubeId: Q054jOk51KQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/Q054jOk51KQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: 🍆🥕🌽🍅</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian as we make a four player game! (that’s so many players 😭)</li>
+<li>youTubeId: _TGelr4YgJo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/_TGelr4YgJo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Using Dialogs</li>
+<li>description: Join Richard, Daryl, Joey, Shannon, and Vivian as they make a point-and-click game with dialogs!</li>
+<li>youTubeId: jskoofU4MiA</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/jskoofU4MiA.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Salt Mining!</li>
+<li>description: Join Richard, Joey, and Vivian as we making a mining game! Use A to break up rocks and find the treasure that the talking shark is hounding you for! In this stream, we used the sprite data extension to attach how many hits a rock needs to break open plus the name of the object. We also used Richard’s new object extension to add an image array for our four directions!</li>
+<li>youTubeId: CeVuCygPoCo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/CeVuCygPoCo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Combo Moves on Pneumatic Tubes</li>
+<li>description: Join Richard, Daryl, Joey, Vivian, and (secret) Shannon as we continue our journey in making combos! We continued the pneumatic tube game and made it suuuper exciting by giving you some speed boosts  and adding fire! ⏩⏩⏩</li>
+<li>youTubeId: P-X6oYZGYNo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/P-X6oYZGYNo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Farm Heist (Pt 1)</li>
+<li>description: Steal from the rich and give to the poor! Join Vivian, Joey, Daryl, and Shannon as they start an interactive story about some animals stealing from the evil Prince John. We utilize the storytelling and character animation extensions to tell our story!</li>
+<li>youTubeId: VT1v4z4I_uk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/VT1v4z4I_uk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: New story blocks!</li>
+<li>description: Join Richard, Vivian, Shannon, and Joey as they build a game using the new blocks in the arcade-story extension! Check out this game where a friendly mouse helps folks out in their neighborhood.</li>
+<li>youTubeId: GZ93Cmng14o</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/GZ93Cmng14o.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Save the Ants!</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make a game about ants crossing a bridge. Hold A to stop the ants from progressing, but hurry! There’s an anteater on the top, and an antlion on the bottom. Help as many ants cross as you can.</li>
+<li>youTubeId: EcE_GmnZ14k</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/EcE_GmnZ14k.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Oh no, Hippo!</li>
+<li>description: Join Richard, Joey, and Vivian as we make a game about the trials of being a hippo!</li>
+<li>youTubeId: K1dzl0wS304</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/K1dzl0wS304.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Spot the difference game!</li>
+<li>description: Join Richard, Shannon, and Vivian as we make a game where you have two images, and you have to decide if they’re the same or different! We use some image manipulation blocks, the text sprite extension, and percent chance.</li>
+<li>youTubeId: p6a9VDb_gLk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/p6a9VDb_gLk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: MakeCode Arcade Advanced</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we add some mini games to the farm heist game! Multitask between the alarm and the gold as you try to escape!</li>
+<li>youTubeId: Ai96s4ybmMo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/Ai96s4ybmMo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Simple Machines</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as they make a game about using simple machines to the bend the world to your will. You can do anything with simple machines. ANYTHING!</li>
+<li>youTubeId: gtGYYG96VdE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/gtGYYG96VdE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Flower Free Fall</li>
+<li>description: Join Richard, Joey, and Vivian as we make a game based on luck! (and a little skill). Use ‘A’ to switch the paddles, and try to get the flowers in the right bins. In this stream, we use the tilemaps extension, an 8x8 tilemap, text sprites, and sprite data.</li>
+<li>youTubeId: fNUv13lhgeo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/fNUv13lhgeo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Gravity Shifting</li>
+<li>description: Why fall down when there are so many other directions? Join Richard, Vivian, Joey, and Shannon as they build a game where gravity has no meaning and everything is pumpkins. This game doesn’t really have a goal, but hopefully it’s a good basis for a much more interesting game!</li>
+<li>youTubeId: mhGsXOxMq0Q</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/mhGsXOxMq0Q.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Pixel Art!</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we have fun making various pixel art! We took suggestions from chat for what to draw, and then took turns talking through our process. It’s a very chill, very fun time.</li>
+<li>youTubeId: zo5KSjMnFas</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/zo5KSjMnFas.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon (Part 2)</li>
+<li>description: Join Daryl, Joey, Vivian, and Shannon as they continue the Sucromon monster collecting game! We’ll be finishing this game over the course of this week so make sure you stay tuned!</li>
+<li>youTubeId: Mb7nDODcY3Q</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/Mb7nDODcY3Q.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Picture Hunt Game</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we make a game about taking pictures of animals! We used the copy paste function of the image editor so we could get a loooooooooot of assets.</li>
+<li>youTubeId: nOx7Ufpi9sU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/nOx7Ufpi9sU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Frog Dungeon</li>
+<li>description: Join Richard, Daryl, Vivian, Joey, and Shannon as they make a game about a toadstool protecting their family from ravenous toads! Press A to throw your mushroom cap and knock the toads away.</li>
+<li>youTubeId: q0xV56wXqzQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/q0xV56wXqzQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: QUICK DRAW!</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian as we make a game about being a robot trying to distract dogs from their jobs with lasers! Press ‘A’ when you see “DRAW” - but don’t do it too soon. Good luck!</li>
+<li>youTubeId: sjw3at0C_mU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/sjw3at0C_mU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Brick Busting Pt. 1</li>
+<li>description: Join Richard, Shannon, Joey, Vivian, and Daryl as we make an awesome brick-busting game! This is part one, and we setup a cannon that fires bouncy balls into an array of fruits and vegitables. Next up we’ll add counters to our fruit and progression mechanics! We also debuted two early access extensions: <a target="_blank" rel="nofollow noopener" href="https://github.com/jwunderl/arcade-sprite-util">https://github.com/jwunderl/arcade-sprite-util</a> from Joey for doing many things with sprites like calculating angles and distances, and <a target="_blank" rel="nofollow noopener" href="https://github.com/riknoll/small-tilemaps">https://github.com/riknoll/small-tilemaps</a> from Richard for creating 8x8 tilemaps in blocks.</li>
+<li>youTubeId: 4W7BxQF_-XE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/4W7BxQF_-XE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Untitled Bunny Game Pt 1</li>
+<li>description: MakeCode Arcade Advanced - Untitled Bunny Game Pt 1</li>
+<li>youTubeId: FARjoscK0vw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/FARjoscK0vw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Creating Biomes in Falling Duck</li>
+<li>description: Join Daryl, Joey, Richard, and Shannon as they continue remixing falling duck! This time, we added a new snow biome to the game complete with snowmen and deadly icicles.</li>
+<li>youTubeId: LaMNgJ7TPl8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/LaMNgJ7TPl8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Gotta Go Fast</li>
+<li>description: Join Richard, Joey, Shannon, and Vivian as they make a game based off of a randomly generated idea! We didn’t quite get to add any moral dilemmas but we at least discussed some potential ones.</li>
+<li>youTubeId: 7-R5hpDJHqE</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/7-R5hpDJHqE.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Ghost River (Part 1)</li>
+<li>description: Join Richard, Vivian, Shannon, and Joey as they make a game about a steamboat going down a ghost river. We set up the boat controls (and a cool ripple effect), and place the ghosts along the river in this stream. We’ll continue adding the story for the ghosts in a later one!</li>
+<li>youTubeId: 8nx1tnK-aDQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/8nx1tnK-aDQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: River Running</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make a game about survival of the jumpiest! Use your left/right/down button to hop between logs and lilypads to avoid falling off the waterfall! Lilypads will sink if you stay on them too long though</li>
+<li>youTubeId: JuCoH9CQwmY</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/JuCoH9CQwmY.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Giraf-fight!</li>
+<li>description: This stream was inspired by videos of Giraffes fighting, but no animals were harmed in the making of this game. Join Richard, Vivian, Daryl, Shannon, and Joey as they make a very important game.</li>
+<li>youTubeId: 53L4lkAfsJQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/53L4lkAfsJQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Maze Solving Robot!</li>
+<li>description: Join Shannon, Joey, and Vivian as we code a robot to solve a maze! The robot is using the left hand rule - if you put your left hand on the wall and always follow that you’ll eventually find your way out. But a human player should be able to do it better…right???</li>
+<li>youTubeId: vNX7TRS7fXI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/vNX7TRS7fXI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Untitled Bunny Game Pt 2</li>
+<li>description: MakeCode Arcade Advanced - Untitled Bunny Game Pt 2</li>
+<li>youTubeId: riZUxWdpLmk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/riZUxWdpLmk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Character dialog pt 2</li>
+<li>description: Join Richard, Vivian, and Joey as we finish the conversation in the dialog game and demonstrate the dangers of messing with clouds.</li>
+<li>youTubeId: RabDNa_wjSc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/RabDNa_wjSc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Deep Sea-d Gardening</li>
+<li>description: Join Richard, Shannon, Vivian, and Daryl as they make a game about gardening by thermal vents! Press the A button to plant a seed, and “sea” if you can figure out how to get a specific variety to grow!</li>
+<li>youTubeId: dZlyN5F1IgQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/dZlyN5F1IgQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Robot Buddy</li>
+<li>description: Join Richard, Vivian, Daryl, and Shannon as they make a game about taking care of a robot. We used the settings extension in this one!</li>
+<li>youTubeId: ATQ_Iq_HbcQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ATQ_Iq_HbcQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Orbiting around the player</li>
+<li>description: Join Richard, Shannon, and Daryl as they make a tornado game with orbital mechanics!</li>
+<li>youTubeId: w5CNFOpgrBw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/w5CNFOpgrBw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Help Desk #2 feat. arcade release, feature requests, how to make a boss</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we answer YOUR questions live! Timestamps for all the topics are below, so feel free to jump around. If you have something you want answered, submit them on the forum at aka.ms/arcade-help</li>
+<li>youTubeId: SCwBz0cGnPc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/SCwBz0cGnPc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Danger Status Bar</li>
+<li>description: Join Hassan, Daryl, and Vivian as we continue to make our city scooter game! Today, we added a police car who will give you tickets if you speed too much and added a “danger bar” which lets you know how close you are to getting a ticket. You can stop by the sandwich shop and eat a sandwich to lower the suspicion. If you get two tickets, your license will get revoked and you’ll have to walk :(</li>
+<li>youTubeId: CFHEAMl2SGk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/CFHEAMl2SGk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Procedural Platformer Pt. 1</li>
+<li>description: Join Richard, Vivian, Shannon, and Joey as they make a very vertical platformer with randomly generated platforms. It also has a very macabre plot about collecting bones for an adorable ghost. We didn’t quite finish this one so we’ll probably be picking it up again next week.</li>
+<li>youTubeId: cnDhMYK3vEY</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/cnDhMYK3vEY.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Falling duck remix, part two!</li>
+<li>description: Join Daryl, Joey, Richard, and Shannon as they continue remixing falling duck. This time we add an egg-ceptional duck hatching animation!</li>
+<li>youTubeId: wLEIYeeAsKo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/wLEIYeeAsKo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon (Part 6)</li>
+<li>description: Join Daryl, Shannon, Joey, and Vivian as we continue making our Sucromon game! In this session we clean up the battle menu and add some exciting new Sucromon.</li>
+<li>youTubeId: BS3BfP7E8z4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/BS3BfP7E8z4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Haunted Home Ownership</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as they make a game about lawn maintenance and ghosts. This stream gives some examples of how to make signs and NPCs in tilemap games, as well as custom dialogs!</li>
+<li>youTubeId: uIhsNahi8Q8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/uIhsNahi8Q8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: a game about herding geese</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian as we work on Vivian’s Traffic Jam game! It’s about herding all your baby goslings to see the goal by using traffic cones. We implemented a new level in this stream, as well as adding some features if you complete a level. The geese are using a flocking algorithm called Boids.</li>
+<li>youTubeId: HMcraHt86Gw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/HMcraHt86Gw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: The Choo Choo Gang</li>
+<li>description: Join Richard, Vivian, Shannon, and Joey as they make a game about pirates that make train noises for some reason. They’re also the heroes of the game, which is weird but cool.</li>
+<li>youTubeId: rAV9QGWPEYg</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/rAV9QGWPEYg.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Ice Cream Tower</li>
+<li>description: Join Richard, Joey, Vivian and Shannon as they make a game about stacking ice cream scoops. Also watch as a controversy threatens to tear the MakeCode team apart.</li>
+<li>youTubeId: gOFKqdKbGWk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/gOFKqdKbGWk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: CAW!</li>
+<li>description: Join Daryl, Joey, Vivian, and Shannon as we make a game about summer days as a ghost.</li>
+<li>youTubeId: bgQlUfoZBb4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/bgQlUfoZBb4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: There’s a Wolf in my Boot!</li>
+<li>description: Join Richard and Shannon as they play a game of mad-libs with sprites and coding! Tune in to find out what kind of game they make with “spooky”, “autumn” and “ice laser” as the starting prompts.</li>
+<li>youTubeId: py5d8xaOqPU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/py5d8xaOqPU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Asphodel follows directions</li>
+<li>description: Join Richard, Shannon, Vivian, Joey, and Daryl as they make a puzzle game where you guide a witch to their destination by placing tiles on the ground.</li>
+<li>youTubeId: JYHWmjqPeGs</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/JYHWmjqPeGs.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Island Recipes Part 2</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we continue our deserted island dessert game! In this episode, we add the ability to complete the recipe and move on to the next one, and then add more ingredients and recipes!</li>
+<li>youTubeId: rc9DM0S2rGw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/rc9DM0S2rGw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Making a Car Selling Game</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make “Save a Buck” - a game about trying to sell cars to various woodland creatures! Richard, Shannon, and Joey make some AWESOME pixel art, and Vivian is taking advantage of the sprite data extension 😁</li>
+<li>youTubeId: V4X_6jI20gQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/V4X_6jI20gQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: No combos present</li>
+<li>description: Join Richard, Shannon, Daryl, and Vivian as we set out to make a simple game about combos, but end up never actually getting to the combo part. We did end up making a pretty cool line following game though!</li>
+<li>youTubeId: xZi24CZiGyw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/xZi24CZiGyw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Dolphin Stunts Pt. 4</li>
+<li>description: Join Richard, Hassan, Vivian, Daryl, and Joey as they put the finishing touches on Tony Albatross: Pro Dolphin. In this one, we add tricks, points, a timer, and some powerups!</li>
+<li>youTubeId: iMIsiUDxCe8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/iMIsiUDxCe8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Scan new powers</li>
+<li>description: Join Richard, Joey, and Vivian as we make a game about Richard exploring a Musicland. He has to make a tough decision - should he use ‘A’ to punch, or ‘B’ to use his keyboard to scan enemies??</li>
+<li>youTubeId: jR0did37daw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/jR0did37daw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Protect your fruit!</li>
+<li>description: Join Daryl, Shannon, and Vivian as we make a game about a turtle protecting your fruit from hungry birds! Press ‘A’ to shoot carrots to shoo them away, or press ‘B’ when you want to end the game and eat your fruit. How much fruit can you eat at once?</li>
+<li>youTubeId: KxmpA3yjrCc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/KxmpA3yjrCc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon [Part 4]</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we continue our Sucromon journey! We’re so close with the battle menu now - in this stream, we finish up closing the switch menu, added some scene switch logic, and started our CATCH Sucromon logic!</li>
+<li>youTubeId: QFuuUUOBfn8</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/QFuuUUOBfn8.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Looping Tilemaps</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as they make a game that does fun stuff with cameras.</li>
+<li>youTubeId: hF8b9p5Hm-0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/hF8b9p5Hm-0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Ghosts on a Train</li>
+<li>description: Join Richard, Daryl, Vivian, and Shannon as they make a game with a cat on a train with a bunch of ghosts! There isn’t a ton of coding in this one, but it’s pretty useful if you’ve ever wondered how to make a sprite move between rooms.</li>
+<li>youTubeId: QrCsFRg5ArA</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/QrCsFRg5ArA.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: SPACE MOUSE</li>
+<li>description: Join Richard, Vivian, and Joey as they make a game with adorable bats and a mouse that must fight them. We also showed off a new extension for animating characters in your games!</li>
+<li>youTubeId: D20_hbD6oT0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/D20_hbD6oT0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Car Selling Game</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we continue our car selling game from yesterday! This time we’re grading our decision - based on the animal’s needs and the car’s specs, how many stars will they leave us in the review?</li>
+<li>youTubeId: t7QTzt6NnoM</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/t7QTzt6NnoM.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: So Rad</li>
+<li>description: Join Richard, Shannon, Vivian, and Daryl as they make a radical game with rocket boots. Outrace the lava while powering up your amazing boots!</li>
+<li>youTubeId: SfKs6RI8Qpk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/SfKs6RI8Qpk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Supermarket Sweep!</li>
+<li>description: Join Richard, (Daryl), Shannon, and Vivian as we make a game about competitive grocery shopping! Pick up items from a stocked shelf using “A”, and try to get the most expensive cart you can! But watch out - if your cart is too full then you’ll move veeeery slowly</li>
+<li>youTubeId: 5btts1NHdEc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/5btts1NHdEc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Procedural Platformer Pt. 2</li>
+<li>description: Join Richard, Vivian, and Shannon as they continue working on a procedurally generated platformer! This one is all about the story. You know, drama! Part three is coming tomorrow.</li>
+<li>youTubeId: WDd7GNJdwGg</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/WDd7GNJdwGg.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: MakeCode Arcade Live: Dolphin Stunts</li>
+<li>description: Join Richard, Vivian, Joey, and Shannon as they create Tony Albatross: Pro Dolphin. We didn’t quite finish this one today, so tune in tomorrow for the exciting conclusion!</li>
+<li>youTubeId: 8MsHR0RPzuc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/8MsHR0RPzuc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: 8x8 City Tilemap</li>
+<li>description: Join Hassan and Vivian as we make a city tilemap with the 8x8 tileset! (sorry the audio is echo-y 😭. Hassan is fine, if you want to listen to his cooking journey!) Here’s the Javascript you need to copy and paste into a new “custom.ts” file to make a new 8x8 tilemap block:</li>
+<li>youTubeId: RSDBnChJCnw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/RSDBnChJCnw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Losing my balloon 😥</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we make a game about strategically releasing a balloon to get to the goal! But there are fans and spikes on the walls, so you have to be smart about it! The balloon also traces its own path so you can see the result later.</li>
+<li>youTubeId: lB7AYfvnOio</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/lB7AYfvnOio.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Spray Paint!</li>
+<li>description: Join Richard, Hassan, Shannon, and Vivian as we make a graffiti game! Use different spray paint cans to draw on the walls, and use the menu button to wash it away.</li>
+<li>youTubeId: KIcgqyZzHrM</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/KIcgqyZzHrM.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Giraffes and Hats</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we give the giraffes something to fight for! And that thing is hats! Also we teach the giraffes how to deal damage while butting heads</li>
+<li>youTubeId: 7HWZ3Jhpr7M</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/7HWZ3Jhpr7M.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Incremental Game (part 2)</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as they finish up the hat-themed incremental game from yesterday!</li>
+<li>youTubeId: fAC5veCvaOk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/fAC5veCvaOk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Boysen2Mandrake</li>
+<li>description: Join Daryl, Vivian, and Shannon as we make a game about mixing ingredients!</li>
+<li>youTubeId: 88HbqKat6n0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/88HbqKat6n0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Help Desk!</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian for our new segment, Help Desk! We asked on our forums for your questions, and we answered them live on stream. There were some audio issues, but they are fixed by 3:24!</li>
+<li>youTubeId: pXYVxR2xcQo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/pXYVxR2xcQo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Cuttly if you can</li>
+<li>description: Join Vivian, Shannon, Joey, and Daryl as build a game with WAVES! Survive wave after wave of sharks as a cuttlefish. Waves are a great game progression mechanic that can be used in many different game styles.</li>
+<li>youTubeId: 6nFs_JoNXE0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/6nFs_JoNXE0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Fast Ghosts</li>
+<li>description: Join Richard, Vivian, Joey, and Shannon as they finish their “gotta go fast” game by adding another level and a ghost that shows you your best time! During the stream we had trouble converting the array of ghost locations into a string, but Richard fixed it afterwards. Check it out in the finished version of the code.</li>
+<li>youTubeId: exGA4qA5how</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/exGA4qA5how.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Elevator Game (Part 2)</li>
+<li>description: Join Richard, Joey, Vivian, Daryl and Shannon as we finish our elevator quiz game! In this stream, we add a quiz master, and use the Story extension (riknoll/arcade-story) to ask questions for the player to answer.</li>
+<li>youTubeId: X6sB42A47aI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/X6sB42A47aI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Fruit Flies When You’re Having Fun</li>
+<li>description: Join Richard, Joey, Vivian, and Daryl as we finish our epic brick breaking game! Complete with game progression and brick counters, this game is more fun than ever! How many rounds can you survive? O.o</li>
+<li>youTubeId: ih-ZGlGUO6g</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ih-ZGlGUO6g.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Stable Table</li>
+<li>description: Join Richard, Shannon, and Vivian as they make a very accurate carpentry simulator. That’s a table!!!</li>
+<li>youTubeId: bhjl71Aa8rk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/bhjl71Aa8rk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: How not to TRAIN your rabbit</li>
+<li>description: Join Richard, Daryl, Shannon, and Vivian as we build in a game in which Jiji the cat faces of against a tenacious rabbit in a duel over who can get the longest vegetable train.</li>
+<li>youTubeId: _IH7bGyP8is</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/_IH7bGyP8is.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Gacha Jobs</li>
+<li>description: Join Shannon, Joey, and Vivian as we make a gachapon game! Try pressing the “menu” button to see your collection.</li>
+<li>youTubeId: tsL1Xu1OeIY</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/tsL1Xu1OeIY.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Mountain Climbing Game</li>
+<li>description: Join Daryl, Shannon, and Vivian as we make a game based on Shannon’s trip to the mountains! Press “B” to climb, and “A” to quickly regain stamina. But watch out for the bears and mosquitoes!</li>
+<li>youTubeId: 0gSj6P2LEHY</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/0gSj6P2LEHY.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Interrogating Apples</li>
+<li>description: Join Richard, Shannon, and Joey as they make a game about investigating an apple graveyard. We show off how to do some conversations and a cursor for hovering and selecting things. We didn’t quite finish it this time around.</li>
+<li>youTubeId: 8uiwjNw2kJs</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/8uiwjNw2kJs.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Island Recipes</li>
+<li>description: Join Richard, Vivian, Joey, Daryl, and Shannon as we start building a randomly generated game idea! Our prompt this time was a relaxing, survival game set on an island and featuring dessert. Our game ended up being about collecting dessert ingredients from found objects drifting in on the tide.</li>
+<li>youTubeId: TYChKa4fOlA</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/TYChKa4fOlA.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon [Part 3]</li>
+<li>description: Join Daryl, Shannon, Joey, and Vivian as we continue making our Sucromon game! In this session we continue making the SWITCH selection, where you can see all the Sucromon you have in your team and what HP they have.</li>
+<li>youTubeId: dl8zLkyAXlg</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/dl8zLkyAXlg.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Find my Food Friends</li>
+<li>description: Join Richard, Vivian, and Shannon as we make a game with randomly generated NPCs!</li>
+<li>youTubeId: hPOHuxrfRe4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/hPOHuxrfRe4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Producing a Play!</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we finish putting together our production of Hamlet! We write out the play within a play scene, and add small features like audience reactions, curtain rising/falling, and having the actors face the right direction when they’re moving and talking. We also do a table read!</li>
+<li>youTubeId: eni6v871XrI</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/eni6v871XrI.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Procedurally Generated Potions!</li>
+<li>description: Join Richard, Shannon, and Vivian as they do some drawing–with math! Learn how to use the “image” blocks to create interesting randomized sprite images.</li>
+<li>youTubeId: mgctDnx1cFw</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/mgctDnx1cFw.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Ice Cream Tower Pt. 2</li>
+<li>description: Join Richard, Vivian, and Joey as they finish up the ice cream tower game from last stream. Watch as Richard fails at his own game over and over and over and over and over….</li>
+<li>youTubeId: LTZqe54Zy2k</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/LTZqe54Zy2k.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Underwater Scene</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as they make an underwater scene! We also show off how to do a 1.5 D game.</li>
+<li>youTubeId: O-YHj9S6Oi0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/O-YHj9S6Oi0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Carnival Game!</li>
+<li>description: Join Shannon and Vivian as they make a carnival game! Use the arrow keys to aim, and hold down “A” to throw a dart at the balloons!</li>
+<li>youTubeId: QtJ6Y29-njQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/QtJ6Y29-njQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Gacha Race</li>
+<li>description: Join Shannon, Daryl, Joey, Richard, and Vivian as we make a DIFFERENT gachapon game, with an attached minigame! Get a random car from the gachapon machine and head over to the start flag to compete in a race and earn more coins.</li>
+<li>youTubeId: FEPUQRypIlQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/FEPUQRypIlQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Gnome, Alone</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we make a cutscene in which a gnome wakes up without his hat. We showcase a new story-telling extension currently in beta.</li>
+<li>youTubeId: xkVOpFCkkf4</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/xkVOpFCkkf4.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Carrots on Mars</li>
+<li>description: Join Richard, Vivian, and Shannon as they make a farming game where the plants fight back. Joey also make a cameo.</li>
+<li>youTubeId: xAjElEwO3E0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/xAjElEwO3E0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Dolphin Stunts Pt. 3</li>
+<li>description: Join Vivian, Joey, and Daryl as they keep putting up with Richard’s demand that we work on this dolphin game. There is still more to come so we’re a dolphin based stream now, I guess!</li>
+<li>youTubeId: ZMhdn5Wav-E</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ZMhdn5Wav-E.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Procedural Platformer Pt. 3</li>
+<li>description: Join Richard, Vivian, and Joey as they finish up their procedurally generated platformer! We got so many platforms in this one. Well, three kinds…. but that’s more than one!</li>
+<li>youTubeId: iaRxeWHOoa0</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/iaRxeWHOoa0.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Monster Mash Up</li>
+<li>description: Join Shannon, Joey, and Vivian as we make a character builder! You can switch between a variety of monster heads, torsos, and legs.</li>
+<li>youTubeId: eJbF9SjX1IA</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/eJbF9SjX1IA.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: A Centennial Celebration Stream</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we reminisce and play some of our favorite games that we’ve made since starting the MakeCode Arcade Advanced livestream. This video marks our 100th stream! Thank you so much for tuning in.</li>
+<li>youTubeId: jxhT9iJKhWQ</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/jxhT9iJKhWQ.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Dolphin Stunts Pt. 2</li>
+<li>description: Join Richard, Vivian, and Shannon as they continue working on Tony Albatross: Pro Dolphin. Sick stunts ensue! We’re probably going to be finishing this game up on Monday.</li>
+<li>youTubeId: UbMV_CVJl18</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/UbMV_CVJl18.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Koala: Flies By Night</li>
+<li>description: Join Richard and Shannon as they make a game about a koala fending off some bats! Use the up arrow to jump, the A button to slash, and the B button to do a spin attack.</li>
+<li>youTubeId: p9IlF62JFow</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/p9IlF62JFow.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Art Stream</li>
+<li>description: In this video, Richard, Joey, and Vivian do some art instead of some code. We started making a tileset for a small town.</li>
+<li>youTubeId: hRy23k93-7A</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/hRy23k93-7A.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Collaborative Pangolin Game Pt. 4</li>
+<li>description: Join Richard, Vivian, and Joey as we finish up the battle minigame in our collaborative pangolin game! We got some more great art today to put into the game and we’ll be opening another post in the forum to get some more from you folks!</li>
+<li>youTubeId: tSb-mYkNIzo</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/tSb-mYkNIzo.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Spinning Dishes</li>
+<li>description: Join Richard, Daryl, Joey, and Vivian as we make a game about packing a dishwasher full of dishes! You’ll need to rotate and carefully place dishes in order to fit as many as possible. Also, this is the debut of Joey’s awesome Sprite Scaling and Rotation extension: <a target="_blank" rel="nofollow noopener" href="https://github.com/jwunderl/pxt-scaling">https://github.com/jwunderl/pxt-scaling</a></li>
+<li>youTubeId: qX7_FA8a7OU</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/qX7_FA8a7OU.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Sucromon (Part 5)</li>
+<li>description: Join Richard, Shannon, Joey, and Vivian as we continue making our Sucromon game! In this session we add the overworld!</li>
+<li>youTubeId: x3YoPiOpn8k</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/x3YoPiOpn8k.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Asphodel follows directions (Part 2)</li>
+<li>description: Join Richard and Shannon as they add levels and a title screen to “Asphodel follows directions”.</li>
+<li>youTubeId: aVweWKcLuBk</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/aVweWKcLuBk.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Choose Your Own Weapon</li>
+<li>description: Join Daryl and Vivian as we build a space shooter with lots of different crazy sci-fi weapons!</li>
+<li>youTubeId: nLE0y9JVm3c</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/nLE0y9JVm3c.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: SUCROMON - Pt.7 Finale!</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, and Vivian as we finish our seven part series to build “SUCROMON”, the monster collecting game where your creatures are sugary delights. In this stream we add XP to our sucromon and handle the enemy and our sucromon running low on health.</li>
+<li>youTubeId: 7YTq2pdwMek</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/7YTq2pdwMek.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: That strawberry is for the feast! Caw?</li>
+<li>description: Join Richard, Daryl, Shannon, Joey, Vivian, and new guest ERIC as we build a game-idea-generator game where you’re a squirrel valiantly defending a strawberry from confused crows.</li>
+<li>youTubeId: 8Vu83_KpCmc</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/8Vu83_KpCmc.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: Not very scared-crows (charge-attack)</li>
+<li>description: MakeCode Arcade Advanced - Not very scared-crows</li>
+<li>youTubeId: ypsWaS1dX18</li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/ypsWaS1dX18.jpg</li>
+</ul>
+<hr>
+<ul>
+<li>name: PlayList</li>
+<li>description: See entire playlist on YouTube</li>
+<li>url: <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/playlist?list=PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT">https://www.youtube.com/playlist?list=PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</a></li>
+<li>youTubePlaylistId: PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT</li>
+<li>imageUrl: /static/advanced-stream/playlist.png</li>
+</ul></code></pre>
+<h2 id="see-also">See Also</h2><p><a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/playlist?list=PLMMBk9hE-SeoHWvTpdezyL9JfF0tocJUT">YouTube Playlist</a></p>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2020 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        var appInsights=window.appInsights||function(config){
+            function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+            disableAjaxTracking: true,
+            overridePageViewDuration: false,
+            disableExceptionTracking: true,
+            isCookieUseDisabled: !includeCookie,
+            isStorageUseDisabled: !includeCookie,
+            url: "/ai.0.js"
+        });
+        window.appInsights=appInsights;
+        appInsights.queue.push(function () {
+            appInsights.context.addTelemetryInitializer(function (envelope) {
+                if (typeof pxtConfig === "undefined" || !pxtConfig) return;
+                var telemetryItem = envelope.data.baseData;
+                telemetryItem.properties = telemetryItem.properties || {};
+                telemetryItem.properties["target"] = pxtConfig.targetId;
+                telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                telemetryItem.properties["cookie"] = includeCookie;
+                if (typeof Windows !== "undefined")
+                    telemetryItem.properties["WindowsApp"] = 1;
+                var userAgent = navigator.userAgent.toLowerCase();
+                var userAgentRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                if (userAgentRegexResult) {
+                    telemetryItem.properties["Electron"] = 1;
+                    telemetryItem.properties["ElectronVersion"] = userAgentRegexResult[1];
+                }
+                if (typeof pxtElectron !== "undefined") {
+                    telemetryItem.properties["PxtElectron"] = 1;
+                    telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                    telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                    telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                    telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                    telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                    telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                    telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                }
+            });
+        });
+        appInsights.trackPageView(null, scrubUrl(window.location.toString()), {urlReferrer: scrubUrl(document.referrer.toString())});
+
+        //Scrub the key (if any) from the URL.
+        function scrubUrl(url) {
+            var scriptIdRegex = /(?:\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            return url.replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx");
+        }
+    }
+    pxt.initAnalyticsAsync();
+</script>
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+{
+    "packages": {
+        "approvedRepos": [
+            "adafruit/Circuit-Playground-Character-Icons",
+            "adafruit/pxt-seesaw",
+            "jwunderl/pxt-button-combos",
+            "jwunderl/pxt-color",
+            "jwunderl/pxt-status-bar",
+            "microsoft/pxt-settings-blocks",
+            "microsoft/arcade-sprite-data",
+            "microsoft/arcade-grid",
+            "microsoft/arcade-minimap",
+            "microsoft/arcade-timers",
+            "microsoft/arcade-text",
+            "microsoft/pxt-tick-event",
+            "microsoft/pxt-tilemaps",
+            "microsoft/pxt-skillmap-sample",
+            "microsoft/pxt-jacdac"
+        ],
+        "preferredRepos": [
+            "adafruit/Circuit-Playground-Character-Icons",
+            "adafruit/pxt-seesaw",
+            "jwunderl/pxt-button-combos",
+            "jwunderl/pxt-color",
+            "jwunderl/pxt-status-bar",
+            "microsoft/pxt-settings-blocks",
+            "microsoft/arcade-sprite-data",
+            "microsoft/arcade-grid",
+            "microsoft/arcade-minimap",
+            "microsoft/arcade-timers",
+            "microsoft/arcade-text",
+            "microsoft/pxt-tilemaps"
+        ],
+        "upgrades": {
+            "microsoft/pxt-tilemaps": "min:v1.8.1",
+            "microsoft/arcade-sprite-data": "min:v0.0.6"
+        },
+        "approvedEditorExtensionUrls": [
+            "https://microsoft.github.io/jacdac-ts/tools/makecode-editor-extension"
+        ]
+    },
+    "shareLinks": {
+        "approved": [
+            "53897-77132-13809-57062",
+            "07573-63879-62644-28924"
+        ]
+    },
+    "skillMap": {
+        "defaultPath": "github:microsoft/pxt-skillmap-sample/skillmap.md"
+    },
+    "galleries": {
+        "Tutorials": "tutorials",
+        "Multipart Tutorials": "multipart-tutorials",
+        "Live Coding": "live-coding",
+        "Blocks Games": "blocks-games",
+        "JavaScript Games": "javascript-games",
+        "Game Jam": "game-jam",
+        "Advanced Livestream": "advanced-stream",
+        "Community Games": "community",
+        "Game Design Concepts": "concepts",
+        "Graphics and Math": "graphics-math",
+        "Arts and Crafts": "arts-and-crafts",
+        "Lessons": "lessons",
+        "Courses": "courses",
+        "Hardware": "hardware",
+        "How to Make a Game Videos": "how-to-make-a-game",
+        "John Park's Workshop": "john-parks-workshop"
+    },
+    "electronManifest": {
+        "latest": "v1.2.7"
+    }
+}
